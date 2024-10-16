@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Museu de Arte Moderna",
+    "categoria": "Museu",
+    "descricao": "Um museu dedicado à arte moderna, com uma coleção impressionante de obras de artistas famosos.",
+    "endereco": "Rua Principal, 123",
+    "avaliacaoMedia": 4.5,
+    "horarioFuncionamento": "Seg-Sex: 9h-17h, Sáb-Dom: 10h-18h"
+  },
+  {
+    "nome": "Parque Central",
+    "categoria": "Parque",
+    "descricao": "Um grande parque urbano com trilhas para caminhada, áreas de piquenique e playgrounds para crianças.",
+    "endereco": "Avenida Central, 456",
+    "avaliacaoMedia": 4.7,
+    "horarioFuncionamento": "Todos os dias: 7h-20h"
+  },
+  {
+    "nome": "Teatro Municipal",
+    "categoria": "Teatro",
+    "descricao": "Um teatro histórico que apresenta uma variedade de peças teatrais, concertos e performances culturais.",
+    "endereco": "Rua Principal, 789",
+    "avaliacaoMedia": 4.3,
+    "horarioFuncionamento": "Varia de acordo com os eventos"
+  },
+  {
+    "nome": "Jardim Botânico",
+    "categoria": "Parque",
+    "descricao": "Um belo jardim botânico com uma grande variedade de plantas exóticas e trilhas para caminhada.",
+    "endereco": "Rua das Flores, 234",
+    "avaliacaoMedia": 4.6,
+    "horarioFuncionamento": "Todos os dias: 8h-18h"
+  },
+  {
+    "nome": "Cinema Lux",
+    "categoria": "Entretenimento",
+    "descricao": "Um cinema moderno com várias salas, exibindo os filmes mais recentes em tecnologia de alta definição.",
+    "endereco": "Avenida dos Cinemas, 567",
+    "avaliacaoMedia": 4.8,
+    "horarioFuncionamento": "Varia de acordo com a programação"
+  },
+  {
+    "nome": "Restaurante Sabores do Mundo",
+    "categoria": "Restaurante",
+    "descricao": "Um restaurante sofisticado que oferece uma variedade de pratos da culinária internacional em um ambiente elegante.",
+    "endereco": "Rua Gastronômica, 890",
+    "avaliacaoMedia": 4.9,
+    "horarioFuncionamento": "Seg-Sáb: 12h-23h, Dom: 12h-20h"
+  }
+]
