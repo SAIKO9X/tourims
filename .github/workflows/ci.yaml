@@ -3,7 +3,8 @@ name: Continuous Integration
 on:
   pull_request:
     types: [ opened, reopened ]
-    branches: "feature/**"
+    branches:
+      - "feature/main"
 
 jobs:
   tests:
