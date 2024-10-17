@@ -2,9 +2,8 @@
 FROM eclipse-temurin:21-alpine as build
 WORKDIR /app
 COPY . .
-# Dá permissão de execução ao arquivo 'mvnw'
 RUN chmod +x mvnw
-# Executa o Maven para compilar o projeto
+RUN ls -la .mvn/wrapper/
 RUN ./mvnw package
 
 # Runtime stage
