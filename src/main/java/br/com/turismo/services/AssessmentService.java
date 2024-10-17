@@ -11,31 +11,31 @@ import org.springframework.stereotype.Service;
 @Service
 public class AssessmentService {
 
-    @Autowired
-    private AssessmentRepository assessmentRepository;
+  @Autowired
+  private AssessmentRepository assessmentRepository;
 
-    @Autowired
-    private TouristUserRepository touristUserRepository;
+  @Autowired
+  private TouristUserRepository touristUserRepository;
 
-    @Autowired
-    private TouristSpotRepository touristSpotRepository;
+  @Autowired
+  private TouristSpotRepository touristSpotRepository;
 
-    public String createAssessment(String userId, AssessmentRequestDTO assessmentRequestDTO) {
-        var user = touristUserRepository.findById(Long.valueOf(userId))
-                .orElseThrow(() -> new IllegalArgumentException("Usuário não encontrado ou inválido."));
+  public String createAssessment(String userId, AssessmentRequestDTO assessmentRequestDTO) {
+    var user = touristUserRepository.findById(Long.valueOf(userId))
+      .orElseThrow(() -> new IllegalArgumentException("Usuário não encontrado ou inválido."));
 
-        var touristSpot = touristSpotRepository.findById(assessmentRequestDTO.touristSpotId())
-                .orElseThrow(() -> new IllegalArgumentException("Ponto turístico não encontrado."));
+    var touristSpot = touristSpotRepository.findById(assessmentRequestDTO.touristSpotId())
+      .orElseThrow(() -> new IllegalArgumentException("Ponto turístico não encontrado."));
 
-        var assessment = Assessment.builder()
-                .user(user)
-                .spot(touristSpot)
-                .pontuacao(assessmentRequestDTO.pontuacao())
-                .comentario(assessmentRequestDTO.comentario())
-                .build();
+    var assessment = Assessment.builder()
+      .user(user)
+      .spot(touristSpot)
+      .pontuacao(assessmentRequestDTO.pontuacao())
+      .comentario(assessmentRequestDTO.comentario())
+      .build();
 
-        assessmentRepository.save(assessment);
+    assessmentRepository.save(assessment);
 
-        return "Avaliação criada com sucesso.";
-    }
+    return "Avaliação criada com sucesso.";
+  }
 }
