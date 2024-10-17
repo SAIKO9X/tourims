@@ -3,7 +3,6 @@ FROM eclipse-temurin:21-alpine as build
 WORKDIR /app
 COPY . .
 RUN chmod +x mvnw
-RUN ls -la .mvn/wrapper/
 RUN ./mvnw package
 
 # Runtime stage
